@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app">
+        <div class="menu">
+            <div class="baris-1">
+                <router-link tag="a" to="pendidikan">
+                    <div class="hexagon">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                </router-link>
+                <router-link tag="a" to="skill">
+                    <div class="hexagon">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </div>
+                </router-link>
+            </div>
+            <div class="baris-2">
+                <router-link tag="a" to="organisasi">
+                    <div class="hexagon">
+                        <i class="fa fa-handshake-o"></i>
+                    </div>
+                </router-link>
+                <router-link tag="a" to="data-diri">
+                    <div class="hexagon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </router-link>
+                <router-link tag="a" to="project">
+                    <div class="hexagon">
+                        <i class="fa fa-code-fork"></i>
+                    </div>
+                </router-link>
+            </div>
+            <div class="baris-3">
+                <router-link tag="a" to="kursus-pelatihan">
+                    <div class="hexagon">
+                        <i class="fa fa-sitemap"></i>
+                    </div>
+                </router-link>
+                <router-link tag="a" to="kontak">
+                    <div class="hexagon">
+                        <i class="fa fa-address-book"></i>
+                    </div>
+                </router-link>
+            </div>
+        </div>
+        <router-view></router-view>
+        <h1>Protofolio</h1>
+    </div>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

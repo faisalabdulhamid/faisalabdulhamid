@@ -1,0 +1,122 @@
+@import "node_modules/compass-mixins/lib/compass/css3";
+// Variables
+$backgound : #3b9eff;
+$backgound-hover : #1a1cff;
+$color: rgb(255, 255, 255);
+$color-hover: rgb(254, 255, 59);
+
+.hexagon {
+  @include box-sizing(content-box);
+  width: 140px;
+  height: 62px;
+  position: relative;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: $color;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  display: inline-block;
+  padding: 5px;
+  @include background($backgound);
+  margin: 0px 2px;
+
+  .fa {
+    font-size: 70px;
+
+    &-user{
+      margin: 0 32%;
+    }
+    &-graduation-cap{
+       margin: 0 17%;
+    }
+    &-handshake-o{
+      margin: 0 16%;
+    }
+    &-lightbulb-o{
+      margin: 0 36%;
+    }
+    &-code-fork{
+      margin: 0 36%;
+    }
+    &-sitemap{
+      margin: 0 25%;
+    }
+    &-address-book{
+      margin: 0 27%;
+    }
+  }
+
+  &:before{
+    @include box-sizing(content-box);
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0;
+    border: 75px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    border-bottom: 40px solid $backgound;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: $color;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    @include text-shadow(none);
+  }
+
+  &:after{
+    @include box-sizing(content-box);
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 0;
+    border: 75px solid rgba(0,0,0,0);
+    border-top: 40px solid $backgound;
+    border-bottom: 0 solid;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: $color;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    @include text-shadow(none);
+  }
+
+  &:hover{
+    @include background($backgound-hover);
+    color: $color-hover;
+
+    &:before{
+      border-bottom: 40px solid $backgound-hover;
+    }
+    &:after{
+      border-top: 40px solid $backgound-hover;
+    }
+
+    .fa {
+      font-size: 70px;
+
+      &-user{
+        margin: 0 32%;
+      }
+      &-graduation-cap{
+        margin: 0 17%;
+      }
+      &-handshake-o{
+        margin: 0 16%;
+      }
+      &-lightbulb-o{
+        margin: 0 36%;
+      }
+      &-code-fork{
+        margin: 0 36%;
+      }
+      &-sitemap{
+        margin: 0 25%;
+      }
+      &-address-book{
+        margin: 0 27%;
+      }
+    }
+  }
+}

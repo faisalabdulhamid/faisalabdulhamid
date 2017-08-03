@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "materialize/materialize";
+@import "variables";
+@import "hexagon";
+
+#app{
+  h1{
+    text-align: right;
+    display: block;
+    font-size: 100px;
+    font-family: "Courier New", Georgia, "Times New Roman", Times, serif;
+    font-weight: 900;
+    margin-top: 60px;
+    margin-right: 33px;
+  }
+}
+.menu {
+  width: 470px;
+  margin: 40px auto;
+
+  .baris-1, .baris-3{
+    width: 312px;
+    margin: 0 auto;
+  }
+  .baris-1{
+    margin-top: 120px;
+  }
+  .baris-2, .baris-3{
+    margin-top: 45px;
+  }
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  //z-index: 1px;
+  //font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-weight: 600;
+
+  padding: 0px;
+
+  span{
+    float: right;
+    font-size: 60px;
+    position: fixed;
+    right: 50px;
+  }
+
+  .diri{
+    background-color: $bg-diri;
+    color: $cl-diri;
+    padding: 50px;
+    min-height: 100px;
+    //height: 100%;
+
+  }
+  .kontak{
+    background-color: $bg-kontak;
+    color: $cl-kontak;
+    padding: 50px;
+    min-height: 100px;
+  }
+  .kursus{
+    background-color: $bg-kursus;
+    color: $cl-kursus;
+    padding: 50px;
+    min-height: 100px;
+  }
+  .organisasi{
+    background-color: $bg-organisasi;
+    color: $cl-organisasi;
+    padding: 50px;
+    min-height: 100px;
+  }
+  .pendidikan{
+    background-color: $bg-pendidikan;
+    color: $cl-pendidikan;
+    padding: 50px;
+    min-height: 100px;
+  }
+  .project{
+    background-color: $bg-project;
+    color: $cl-project;
+    padding: 50px;
+    min-height: 100px;
+  }
+  .skill{
+    background-color: $bg-skill;
+    color: $cl-skill;
+    padding: 50px;
+    min-height: 100px;
+  }
+
+  .kiri{
+    border-right: 2px solid $cl-diri;
+    h1{
+      text-align: right;
+      display: block;
+      font-size: 150px;
+      font-family: "Courier New", Georgia, "Times New Roman", Times, serif;
+      font-weight: 900;
+
+    }
+    .satu{
+      color: $cl-kontak;
+      margin-bottom: 0px;
+    }
+    .dua{
+      color: #ffffff;
+      margin-top: 0px;
+    }
+  }
+  .kanan{
+    ul{
+      margin-left: 10px;
+    }
+    li{
+      margin: 20px 0px;
+    }
+
+  }
+}
